@@ -1,22 +1,16 @@
-# Project 0
+# Project 1
 
-## Web Programming with Python and JavaScript
+Web Programming with Python and JavaScript
 
-This is a personal website completed as a part of Harvard's CS50Web course on website programming.  It consists of four main HTML files.
+## Spineless Reviews
 
-#### Overall Design Method
-The whole design is based on Bootstrap 4 and uses Sass to compile to CSS code.  I have integrated it with a theme (Minty) from Bootswatch.  
-For more info on customizing your own theme using Bootswatch, see [this link](https://bootswatch.com/help/).
-The design is responsive and mobile-friendly.
+I tried to go above and beyond with this assignment.  It meets all the requirements, but is also visually appealing and easy to use.  I put a lot of thought into the UX.
 
-###### index.html
-This is the main file, where I explain what the site is about and link to some more content.  I have mockup customer testimonials, a table, and a form at the bottom (which doesn't do anything).  
+User registration and authentication are all handled using Flask sessions.  The home screen includes a "quote of the day" about reading or books in general.
 
+Once logged in, users can search for books by ISBN, author, or book title.  Partial matches work and the search is forgiving regarding spacing and capitalization.
 
-###### _bootswatch.scss and _variables.scss
-These files are where I make modifications for particular `.id` and `.class` HTML tags.  There are many examples in there of modified SCSS variables, SCSS nesting, and SCSS inheritance.  
+Once a user finds a book to click on, more info is displayed, including the cover jacket of the book, the Goodreads review count, as well as stars are dynamically
+generated.  If there are existing Spineless Reviews, these are also shown.  Users are enforced to be only able to add on review.
 
-###### friedeggs.html, hotdog.html and leftovers.html
-These files are all recipes linked to from the table in index.html.  They contain images and some more custom classes.
-
-# cmdlinebeep
+Finally, there is an API URL endpoint that other programs can use.
